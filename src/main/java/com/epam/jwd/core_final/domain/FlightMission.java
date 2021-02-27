@@ -1,5 +1,11 @@
 package com.epam.jwd.core_final.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDate;
+import java.util.List;
+
 /**
  * Expected fields:
  * <p>
@@ -13,4 +19,21 @@ package com.epam.jwd.core_final.domain;
  */
 public class FlightMission extends AbstractBaseEntity {
     // todo
+    @Getter private final LocalDate startDate;
+    @Getter private final LocalDate endDate;
+    @Getter private final Long distance;
+    @Setter private Spaceship assignedSpaceShift;
+    @Setter private List<CrewMember> assignedCrew;
+    @Setter private MissionResult missionResult;
+
+    public FlightMission(String name, LocalDate startDate, LocalDate endDate, Long distance, Spaceship assignedSpaceShift, List<CrewMember> assignedCrew, MissionResult missionResult) {
+        super(name);
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.distance = distance;
+        this.assignedSpaceShift = assignedSpaceShift;
+        this.assignedCrew = assignedCrew;
+        this.missionResult = missionResult;
+    }
+
 }

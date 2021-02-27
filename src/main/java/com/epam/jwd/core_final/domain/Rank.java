@@ -1,6 +1,7 @@
 package com.epam.jwd.core_final.domain;
 
 import com.epam.jwd.core_final.exception.UnknownEntityException;
+import lombok.Getter;
 
 public enum Rank implements BaseEntity {
     TRAINEE(1L),
@@ -8,22 +9,24 @@ public enum Rank implements BaseEntity {
     FIRST_OFFICER(3L),
     CAPTAIN(4L);
 
-    private final Long id;
+    @Getter private final Long id;
 
     Rank(Long id) {
         this.id = id;
     }
 
-    @Override
-    public Long getId() {
-        return id;
-    }
 
     /**
      * todo via java.lang.enum methods!
      */
     @Override
     public String getName() {
+        Rank[] values = values();
+        if (this.id == 1L) return values[0].name();
+        if (this.id == 2L) return values[1].name();
+        if (this.id == 3L) return values[2].name();
+        if (this.id == 4L) return values[3].name();
+
         return null;
     }
 
@@ -32,7 +35,24 @@ public enum Rank implements BaseEntity {
      *
      * @throws UnknownEntityException if such id does not exist
      */
-    public static Rank resolveRankById(int id) {
-        return null;
+    public static Rank resolveRankById(int id) throws UnknownEntityException {
+        Rank[] values = values();
+        switch (id){
+            case 1: {
+                return values[0];
+            }
+            case 2: {
+                return values[1];
+            }
+            case 3: {
+                return values[2];
+            }
+            case 4: {
+                return values[3];
+            }
+            default:{
+                throw new UnknownEntityException("Such id doesn't exist!");
+            }
+        }
     }
 }
