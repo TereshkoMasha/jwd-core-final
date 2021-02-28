@@ -3,7 +3,6 @@ package com.epam.jwd.core_final.service.impl;
 import com.epam.jwd.core_final.context.impl.NasaContext;
 import com.epam.jwd.core_final.criteria.Criteria;
 import com.epam.jwd.core_final.domain.FlightMission;
-import com.epam.jwd.core_final.domain.factory.impl.FlightMissionFactory;
 import com.epam.jwd.core_final.service.MissionService;
 
 import java.util.List;
@@ -32,6 +31,6 @@ public class MissionServiceImpl implements MissionService {
 
     @Override
     public FlightMission createMission(FlightMission flightMission) {
-        return new FlightMissionFactory().create(flightMission);
+        return null;
     }
 }

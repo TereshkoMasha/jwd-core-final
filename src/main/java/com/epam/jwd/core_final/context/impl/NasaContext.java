@@ -2,10 +2,7 @@ package com.epam.jwd.core_final.context.impl;
 
 import com.epam.jwd.core_final.context.ApplicationContext;
 import com.epam.jwd.core_final.context.ApplicationMenu;
-import com.epam.jwd.core_final.domain.ApplicationProperties;
-import com.epam.jwd.core_final.domain.BaseEntity;
-import com.epam.jwd.core_final.domain.CrewMember;
-import com.epam.jwd.core_final.domain.Spaceship;
+import com.epam.jwd.core_final.domain.*;
 import com.epam.jwd.core_final.exception.InvalidStateException;
 import com.epam.jwd.core_final.exception.UnknownEntityException;
 import com.epam.jwd.core_final.util.InputReaderUtil;
@@ -24,6 +21,8 @@ public class NasaContext implements ApplicationContext, ApplicationMenu {
     // no getters/setters for them
     private Collection<CrewMember> crewMembers = new ArrayList<>();
     private Collection<Spaceship> spaceships = new ArrayList<>();
+    private Collection<FlightMission> missions = new ArrayList<>();
+    private Collection<Planet> planetMap = new ArrayList<>();
 
     @Override
     public <T extends BaseEntity> Collection<T> retrieveBaseEntityList(Class<T> tClass) {
@@ -33,6 +32,12 @@ public class NasaContext implements ApplicationContext, ApplicationMenu {
             }
             case "Spaceship": {
                 return (Collection<T>) spaceships;
+            }
+            case "FlightMission": {
+                return (Collection<T>) missions;
+            }
+            case "Planet": {
+                return (Collection<T>) planetMap;
             }
             default: {
                 throw new UnknownEntityException("Invalid entity name");
@@ -52,13 +57,13 @@ public class NasaContext implements ApplicationContext, ApplicationMenu {
         ApplicationProperties properties = propertyReaderUtil.readProperties();
 
         InputReaderUtil inputReaderUtil = new InputReaderUtil(properties);
-        inputReaderUtil.readInputFile(crewMembers, spaceships);
+        inputReaderUtil.readInputFile();
 
 
     }
 
     @Override
     public ApplicationContext getApplicationContext() {
-        return instance;
+        return NasaContext.getInstance();
     }
 }

@@ -1,4 +1,4 @@
-package com.epam.jwd.core_final.domain.factory;
+package com.epam.jwd.core_final.domain.factory.impl;
 
 import com.epam.jwd.core_final.domain.CrewMember;
 import com.epam.jwd.core_final.domain.Rank;

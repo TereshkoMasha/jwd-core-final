@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -16,17 +17,21 @@ import java.util.List;
  * assignedSpaceShift {@link Spaceship} - not defined by default
  * assignedCrew {@link java.util.List<CrewMember>} - list of missions members based on ship capacity - not defined by default
  * missionResult {@link MissionResult}
+ * from {@link Planet}
+ * to {@link Planet}
  */
 public class FlightMission extends AbstractBaseEntity {
     // todo
-    @Getter private final LocalDate startDate;
-    @Getter private final LocalDate endDate;
+    @Getter private final LocalDateTime startDate;
+    @Getter private final LocalDateTime endDate;
     @Getter private final Long distance;
-    @Setter private Spaceship assignedSpaceShift;
-    @Setter private List<CrewMember> assignedCrew;
-    @Setter private MissionResult missionResult;
+    @Getter @Setter private Spaceship assignedSpaceShift;
+    @Getter @Setter private List<CrewMember> assignedCrew;
+    @Getter@Setter private MissionResult missionResult;
+    private Planet departurePoint;
+    private Planet arrivalPoint;
 
-    public FlightMission(String name, LocalDate startDate, LocalDate endDate, Long distance, Spaceship assignedSpaceShift, List<CrewMember> assignedCrew, MissionResult missionResult) {
+    public FlightMission(String name, LocalDateTime startDate, LocalDateTime endDate, Long distance, Spaceship assignedSpaceShift, List<CrewMember> assignedCrew, MissionResult missionResult) {
         super(name);
         this.startDate = startDate;
         this.endDate = endDate;

@@ -6,6 +6,7 @@ import com.epam.jwd.core_final.domain.MissionResult;
 import com.epam.jwd.core_final.domain.Spaceship;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -13,8 +14,8 @@ import java.util.List;
  */
 public class FlightMissionCriteria extends Criteria<FlightMission> {
     private String missionName;
-    private LocalDate startDate;
-    private LocalDate endDate;
+    private LocalDateTime startDate;
+    private LocalDateTime endDate;
     private Long distance;
     private Spaceship assignedSpaceShift;
     private List<CrewMember> assignedCrew;
@@ -29,9 +30,9 @@ public class FlightMissionCriteria extends Criteria<FlightMission> {
                     this.missionName = (String) criteria;
                     break;
                 }
-                case "LocalDate": {
-                    this.startDate = (LocalDate) criteria;
-                    this.endDate = (LocalDate) criteria;
+                case "LocalDateTime": {
+                    this.startDate = (LocalDateTime) criteria;
+                    this.endDate = (LocalDateTime) criteria;
                     break;
                 }
                 case "Spaceship": {

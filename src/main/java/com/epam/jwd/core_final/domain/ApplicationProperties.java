@@ -32,10 +32,12 @@ public final class ApplicationProperties {
     private final Integer fileRefreshRate;  //частота обновления файла
     @Getter
     private final String dataTimeFormat;
+    @Getter
+    private final String planetFileName;
 
     public ApplicationProperties(String inputRootDir, String outputRootDir, String crewFileName,
                                  String missionsFileName, String spaceshipsFileName,
-                                 Integer fileRefreshRate, String dataTimeFormat) {
+                                 Integer fileRefreshRate, String dataTimeFormat, String planetFileName) {
         this.inputRootDir = inputRootDir;
         this.outputRootDir = outputRootDir;
         this.crewFileName = crewFileName;
@@ -43,6 +45,7 @@ public final class ApplicationProperties {
         this.spaceshipsFileName = spaceshipsFileName;
         this.fileRefreshRate = fileRefreshRate;
         this.dataTimeFormat = dataTimeFormat;
+        this.planetFileName = planetFileName;
     }
 
 

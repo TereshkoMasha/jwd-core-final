@@ -21,7 +21,8 @@ public final class PropertyReaderUtil {
                 , properties.getProperty("missionsFileName")
                 , properties.getProperty("spaceshipsFileName")
                 , Integer.parseInt(properties.getProperty("fileRefreshRate"))
-                , properties.getProperty("dateTimeFormat"));
+                , properties.getProperty("dateTimeFormat")
+                , properties.getProperty("planetFileName"));
     }
 
     /**
