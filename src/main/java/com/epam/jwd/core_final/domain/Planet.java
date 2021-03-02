@@ -13,7 +13,7 @@ public class Planet extends AbstractBaseEntity {
     @Getter
     private final Point point;
 
-    static class Point {
+    public static class Point {
         @Getter
         private final int x;
         @Getter
@@ -25,7 +25,7 @@ public class Planet extends AbstractBaseEntity {
         }
     }
 
-    Planet(String name, Point point) {
+    public Planet(String name, Point point) {
         super(name);
         this.point = point;
     }

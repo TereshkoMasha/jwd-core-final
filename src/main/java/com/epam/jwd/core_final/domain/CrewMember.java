@@ -1,12 +1,10 @@
 package com.epam.jwd.core_final.domain;
 
 
-import com.epam.jwd.core_final.criteria.CrewMemberCriteria;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Objects;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Expected fields:
@@ -15,12 +13,17 @@ import java.util.concurrent.atomic.AtomicInteger;
  * rank {@link Rank} - member rank
  * isReadyForNextMissions {@link Boolean} - true by default. Set to false, after first failed mission
  */
+
 public class CrewMember extends AbstractBaseEntity {
     // todo
 
-    @Getter private final Role role;
-    @Getter private final Rank rank;
-    @Setter @Getter private Boolean isReadyForNextMissions;
+    @Getter
+    private final Role role;
+    @Getter
+    private final Rank rank;
+    @Setter
+    @Getter
+    private Boolean isReadyForNextMissions;
 
     @Override
     public boolean equals(Object o) {
@@ -35,10 +38,19 @@ public class CrewMember extends AbstractBaseEntity {
         return Objects.hash(role, rank, isReadyForNextMissions);
     }
 
-     public CrewMember(String name, Role role, Rank rank) {
+    public CrewMember(String name, Role role, Rank rank) {
         super(name);
         this.role = role;
         this.rank = rank;
         this.isReadyForNextMissions = true;
+    }
+
+    @Override
+    public String toString() {
+        return "CrewMember{" +
+                "role=" + role +
+                ", rank=" + rank +
+                ", isReadyForNextMissions=" + isReadyForNextMissions +
+                '}';
     }
 }

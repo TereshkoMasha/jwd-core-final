@@ -3,7 +3,6 @@ package com.epam.jwd.core_final.domain;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -22,12 +21,21 @@ import java.util.List;
  */
 public class FlightMission extends AbstractBaseEntity {
     // todo
-    @Getter private final LocalDateTime startDate;
-    @Getter private final LocalDateTime endDate;
-    @Getter private final Long distance;
-    @Getter @Setter private Spaceship assignedSpaceShift;
-    @Getter @Setter private List<CrewMember> assignedCrew;
-    @Getter@Setter private MissionResult missionResult;
+    @Getter
+    private final LocalDateTime startDate;
+    @Getter
+    private final LocalDateTime endDate;
+    @Getter
+    private final Long distance;
+    @Getter
+    @Setter
+    private Spaceship assignedSpaceShift;
+    @Getter
+    @Setter
+    private List<CrewMember> assignedCrew;
+    @Getter
+    @Setter
+    private MissionResult missionResult;
     private Planet departurePoint;
     private Planet arrivalPoint;
 

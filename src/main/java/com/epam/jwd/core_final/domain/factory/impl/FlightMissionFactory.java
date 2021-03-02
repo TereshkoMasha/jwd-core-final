@@ -40,8 +40,6 @@ public class FlightMissionFactory implements EntityFactory<FlightMission> {
 
         List<CrewMember> assignedCrew = new ArrayList<>();
 
-        assert spaceship != null;
-
         for (Map.Entry<Role, Short> entry
                 : spaceship.getCrew().entrySet()) {
             for (int m = 0, i = 0; m< crewMembers.size();  m++) {
