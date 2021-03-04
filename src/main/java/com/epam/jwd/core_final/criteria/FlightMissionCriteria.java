@@ -21,37 +21,12 @@ public class FlightMissionCriteria extends Criteria<FlightMission> {
     private List<CrewMember> assignedCrew;
     private MissionResult missionResult;
 
-    @Override
-    void criteria(Object... objects) {
-        for (Object criteria :
-                objects) {
-            switch (criteria.getClass().getSimpleName()) {
-                case "String": {
-                    this.missionName = (String) criteria;
-                    break;
-                }
-                case "LocalDateTime": {
-                    this.startDate = (LocalDateTime) criteria;
-                    this.endDate = (LocalDateTime) criteria;
-                    break;
-                }
-                case "Spaceship": {
-                    this.assignedSpaceShift = (Spaceship) criteria;
-                    this.distance = assignedSpaceShift.getFlightDistance();
-                    break;
-                }
-                case "ArrayList": {
-                    this.assignedCrew = (List<CrewMember>) criteria;
-                    break;
-                }
-                case "MissionResult": {
-                    this.missionResult = (MissionResult) criteria;
-                }
-            }
-        }
+    public FlightMissionCriteria(Long id, String name) {
+        super(id, name);
     }
 
-    public FlightMission getResult() {
-        return new FlightMission(missionName, startDate, endDate, distance, assignedSpaceShift, assignedCrew, missionResult);
+    @Override
+    void criteria(Object... objects) {
+
     }
 }

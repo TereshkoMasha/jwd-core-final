@@ -1,22 +1,23 @@
 package com.epam.jwd.core_final.context.impl;
 
 import com.epam.jwd.core_final.context.ApplicationContext;
-import com.epam.jwd.core_final.context.ApplicationMenu;
 import com.epam.jwd.core_final.domain.*;
 import com.epam.jwd.core_final.exception.InvalidStateException;
 import com.epam.jwd.core_final.exception.UnknownEntityException;
 import com.epam.jwd.core_final.util.InputReaderUtil;
+import com.epam.jwd.core_final.util.JSONWriterUtil;
 import com.epam.jwd.core_final.util.PropertyReaderUtil;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Getter;
+import org.apache.log4j.Logger;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Timer;
+import java.util.TimerTask;
 
 // todo
-public class NasaContext implements ApplicationContext, ApplicationMenu {
+public class NasaContext implements ApplicationContext {
+    private static final Logger logger = Logger.getLogger(NasaContext.class);
 
     @Getter
     private static final NasaContext instance = new NasaContext();
@@ -55,18 +56,16 @@ public class NasaContext implements ApplicationContext, ApplicationMenu {
      */
     @Override
     public void init() throws InvalidStateException {
-
+        logger.info("Application launched");
         PropertyReaderUtil propertyReaderUtil = new PropertyReaderUtil();
         ApplicationProperties properties = propertyReaderUtil.readProperties();
 
         InputReaderUtil inputReaderUtil = new InputReaderUtil(properties);
         inputReaderUtil.readInputFile();
 
+        TimerTask task = new JSONWriterUtil(properties);
+        Timer timer = new Timer(true);
+        timer.scheduleAtFixedRate(task, 0, 10 * 200);
 
-    }
-
-    @Override
-    public ApplicationContext getApplicationContext() {
-        return NasaContext.getInstance();
     }
 }

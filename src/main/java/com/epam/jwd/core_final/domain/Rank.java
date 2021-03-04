@@ -1,8 +1,10 @@
 package com.epam.jwd.core_final.domain;
 
 import com.epam.jwd.core_final.exception.UnknownEntityException;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Getter;
 
+@JsonDeserialize(as = Rank.class)
 public enum Rank implements BaseEntity {
     TRAINEE(1L),
     SECOND_OFFICER(2L),
@@ -54,5 +56,10 @@ public enum Rank implements BaseEntity {
                 throw new UnknownEntityException("Such id doesn't exist!");
             }
         }
+    }
+
+    @Override
+    public String toString() {
+        return id.toString();
     }
 }

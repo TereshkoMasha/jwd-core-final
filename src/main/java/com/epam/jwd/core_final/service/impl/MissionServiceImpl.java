@@ -2,7 +2,9 @@ package com.epam.jwd.core_final.service.impl;
 
 import com.epam.jwd.core_final.context.impl.NasaContext;
 import com.epam.jwd.core_final.criteria.Criteria;
+import com.epam.jwd.core_final.domain.CrewMember;
 import com.epam.jwd.core_final.domain.FlightMission;
+import com.epam.jwd.core_final.domain.Spaceship;
 import com.epam.jwd.core_final.service.MissionService;
 
 import java.util.List;
@@ -32,5 +34,15 @@ public class MissionServiceImpl implements MissionService {
     @Override
     public FlightMission createMission(FlightMission flightMission) {
         return null;
+    }
+
+    @Override
+    public void assignSpaceshipOnMission(Spaceship crewMember) throws RuntimeException {
+
+    }
+
+    @Override
+    public void assignCrewMemberOnMission(CrewMember crewMember) throws RuntimeException {
+
     }
 }

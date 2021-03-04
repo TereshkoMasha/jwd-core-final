@@ -1,5 +1,6 @@
 package com.epam.jwd.core_final.domain;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,6 +10,7 @@ import lombok.Setter;
  * id {@link Long} - entity id
  * name {@link String} - entity name
  */
+@JsonDeserialize(as = CrewMember.class)
 public abstract class AbstractBaseEntity implements BaseEntity {
     private static long count = 0;
     @Setter

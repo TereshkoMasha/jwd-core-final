@@ -36,17 +36,42 @@ public class FlightMission extends AbstractBaseEntity {
     @Getter
     @Setter
     private MissionResult missionResult;
+    @Getter
     private Planet departurePoint;
+    @Getter
     private Planet arrivalPoint;
 
-    public FlightMission(String name, LocalDateTime startDate, LocalDateTime endDate, Long distance, Spaceship assignedSpaceShift, List<CrewMember> assignedCrew, MissionResult missionResult) {
+    public FlightMission(String name, LocalDateTime startDate, LocalDateTime endDate
+            , Long distance,MissionResult missionResult) {
         super(name);
         this.startDate = startDate;
         this.endDate = endDate;
         this.distance = distance;
-        this.assignedSpaceShift = assignedSpaceShift;
-        this.assignedCrew = assignedCrew;
         this.missionResult = missionResult;
     }
 
+    public FlightMission(String name, LocalDateTime startDate, LocalDateTime endDate, Long distance, MissionResult missionResult, Planet departurePoint, Planet arrivalPoint) {
+        super(name);
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.distance = distance;
+        this.missionResult = missionResult;
+        this.departurePoint = departurePoint;
+        this.arrivalPoint = arrivalPoint;
+    }
+
+    @Override
+    public String toString() {
+        return "FlightMission{" +
+                "name=" + super.getName() +
+                "startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", distance=" + distance +
+                ", assignedSpaceShift=" + assignedSpaceShift +
+                ", assignedCrew=" + assignedCrew +
+                ", missionResult=" + missionResult +
+                ", departurePoint=" + departurePoint +
+                ", arrivalPoint=" + arrivalPoint +
+                '}';
+    }
 }

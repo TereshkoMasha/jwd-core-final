@@ -1,16 +1,21 @@
 package com.epam.jwd.core_final.util;
 
 import com.epam.jwd.core_final.Main;
+import com.epam.jwd.core_final.context.Application;
 import com.epam.jwd.core_final.domain.ApplicationProperties;
+import org.apache.log4j.Logger;
+
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public final class PropertyReaderUtil {
+    private static final Logger logger = Logger.getLogger(PropertyReaderUtil.class);
 
     private static final Properties properties = new Properties();
 
     public PropertyReaderUtil() {
-         loadProperties();
+        loadProperties();
     }
 
     public ApplicationProperties readProperties() {
@@ -36,9 +41,10 @@ public final class PropertyReaderUtil {
 
 
     private void loadProperties() {
-        try {
-            properties.load(Main.class.getClassLoader().getResourceAsStream("application.properties"));
+        try (InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("application.properties")) {
+            properties.load(inputStream);
             readProperties();
+            logger.info("Properties loaded");
         } catch (IOException e) {
             e.printStackTrace();
         }

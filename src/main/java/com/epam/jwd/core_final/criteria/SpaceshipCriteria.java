@@ -15,6 +15,10 @@ public class SpaceshipCriteria extends Criteria<Spaceship> {
     private Long flightDistance;
     private String name;
 
+    public SpaceshipCriteria(Long id, String name) {
+        super(id, name);
+    }
+
 
     @Override
     void criteria(Object... objects) {

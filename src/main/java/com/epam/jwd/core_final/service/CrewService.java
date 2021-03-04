@@ -3,6 +3,7 @@ package com.epam.jwd.core_final.service;
 import com.epam.jwd.core_final.criteria.Criteria;
 import com.epam.jwd.core_final.domain.CrewMember;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,7 +13,7 @@ import java.util.Optional;
  */
 public interface CrewService {
 
-    List<CrewMember> findAllCrewMembers();
+    List<CrewMember> findAllCrewMembers() throws IOException;
 
     List<CrewMember> findAllCrewMembersByCriteria(Criteria<? extends CrewMember> criteria);
 
@@ -20,10 +21,9 @@ public interface CrewService {
 
     CrewMember updateCrewMemberDetails(CrewMember crewMember);
 
-    // todo create custom exception for case, when crewMember is not able to be assigned
-    void assignCrewMemberOnMission(CrewMember crewMember) throws RuntimeException;
 
     // todo create custom exception for case, when crewMember is not able to be created (for example - duplicate.
     // crewmember unique criteria - only name!
-    CrewMember createCrewMember(CrewMember crewMember) throws RuntimeException;
+    CrewMember createCrewMember(CrewMember crewMember) throws RuntimeException, Exception;
+
 }

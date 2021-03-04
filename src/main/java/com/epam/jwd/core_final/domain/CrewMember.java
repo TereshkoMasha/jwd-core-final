@@ -1,6 +1,7 @@
 package com.epam.jwd.core_final.domain;
 
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,9 +15,9 @@ import java.util.Objects;
  * isReadyForNextMissions {@link Boolean} - true by default. Set to false, after first failed mission
  */
 
+@JsonDeserialize(as = CrewMember.class)
 public class CrewMember extends AbstractBaseEntity {
     // todo
-
     @Getter
     private final Role role;
     @Getter
@@ -25,6 +26,12 @@ public class CrewMember extends AbstractBaseEntity {
     @Getter
     private Boolean isReadyForNextMissions;
 
+    public CrewMember(String name, Role role, Rank rank) {
+        super(name);
+        this.role = role;
+        this.rank = rank;
+        this.isReadyForNextMissions = true;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -32,22 +39,15 @@ public class CrewMember extends AbstractBaseEntity {
         CrewMember that = (CrewMember) o;
         return role == that.role && rank == that.rank && Objects.equals(isReadyForNextMissions, that.isReadyForNextMissions);
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(role, rank, isReadyForNextMissions);
     }
 
-    public CrewMember(String name, Role role, Rank rank) {
-        super(name);
-        this.role = role;
-        this.rank = rank;
-        this.isReadyForNextMissions = true;
-    }
-
     @Override
     public String toString() {
         return "CrewMember{" +
+                "name=" + super.getName() +
                 "role=" + role +
                 ", rank=" + rank +
                 ", isReadyForNextMissions=" + isReadyForNextMissions +

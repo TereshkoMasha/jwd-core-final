@@ -3,20 +3,15 @@ package com.epam.jwd.core_final.util;
 import com.epam.jwd.core_final.Main;
 import com.epam.jwd.core_final.context.impl.NasaContext;
 import com.epam.jwd.core_final.domain.*;
-import com.epam.jwd.core_final.domain.factory.EntityFactory;
 import com.epam.jwd.core_final.domain.factory.impl.CrewMemberFactory;
 import com.epam.jwd.core_final.domain.factory.impl.FlightMissionFactory;
 import com.epam.jwd.core_final.domain.factory.impl.PlanetFactory;
 import com.epam.jwd.core_final.domain.factory.impl.SpaceshipFactory;
 import com.epam.jwd.core_final.exception.InvalidStateException;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.log4j.Logger;
 
-import java.io.File;
-import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Collection;
 import java.util.Objects;
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -24,20 +19,16 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public final class InputReaderUtil {
+
+    private final Logger logger = Logger.getLogger(InputReaderUtil.class);
     private final ApplicationProperties properties;
     private Scanner scanner;
-
 
     public InputReaderUtil(ApplicationProperties properties) {
         this.properties = properties;
     }
 
     private void readCrewFile() throws InvalidStateException {
-
-        File file = new File("src/main/resources/" + properties.getOutputRootDir()
-                + "\\" + properties.getCrewFileName() + ".json");
-
-        EntityFactory<CrewMember> crewFactory = new CrewMemberFactory();
         scanner = new Scanner(Objects.requireNonNull(
                 Main.class.getClassLoader().getResourceAsStream(properties.getInputRootDir()
                         + "/" + properties.getCrewFileName())));
@@ -50,22 +41,19 @@ public final class InputReaderUtil {
                 matcher = pattern1.matcher(scanner.nextLine());
                 while (matcher.find()) {
                     NasaContext.getInstance().retrieveBaseEntityList(CrewMember.class)
-                            .add(crewFactory.create(matcher.group(1), matcher.group(2), matcher.group(3)));
+                            .add(new CrewMemberFactory().create(Role.resolveRoleById(Integer.parseInt(matcher.group(1))),
+                                    matcher.group(2), Rank.resolveRankById(Integer.parseInt(matcher.group(3)))));
                     ;
                 }
-                refreshJSON(file, CrewMember.class);
             } else {
-                throw new InvalidStateException("Invalid crew.txt input");
+
+                throw new InvalidStateException("Invalid" + properties.getCrewFileName() + ".txt input");
             }
         }
-
+        logger.info("Processed " + properties.getCrewFileName() + ".txt file");
     }
 
     private void readSpaceshipFile() throws InvalidStateException {
-        File file = new File("src/main/resources/" + properties.getOutputRootDir()
-                + "\\" + properties.getSpaceshipsFileName() + ".json");
-
-        EntityFactory<Spaceship> spaceshipFactory = new SpaceshipFactory();
         scanner = new Scanner(Objects.requireNonNull(
                 Main.class.getClassLoader().getResourceAsStream(properties.getInputRootDir()
                         + "/" + properties.getSpaceshipsFileName())));
@@ -78,25 +66,20 @@ public final class InputReaderUtil {
                 while (scanner.hasNext()) {
                     matcher = pattern1.matcher(scanner.nextLine());
                     if (matcher.find()) {
-                        NasaContext.getInstance().retrieveBaseEntityList(Spaceship.class).add(spaceshipFactory
+                        NasaContext.getInstance().retrieveBaseEntityList(Spaceship.class).add(new SpaceshipFactory()
                                 .create(matcher.group(1), matcher.group(2), matcher.group(3), matcher.group(4),
                                         matcher.group(5), matcher.group(6)));
                     }
                 }
-                refreshJSON(file, Spaceship.class);
             } else {
-                throw new InvalidStateException("Invalid spaceship.txt input");
+                throw new InvalidStateException("Invalid " + properties.getSpaceshipsFileName() + ".txt input");
             }
         }
-
+        logger.info("Processed " + properties.getSpaceshipsFileName() + ".txt file");
     }
 
     private void readMissionsFile() throws InvalidStateException {
-        File file = new File("src/main/resources/" + properties.getOutputRootDir()
-                + "\\" + properties.getMissionsFileName() + ".json");
-
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(properties.getDataTimeFormat());
-        EntityFactory<FlightMission> flightMissionFactory = new FlightMissionFactory();
         scanner = new Scanner(Objects.requireNonNull(
                 Main.class.getClassLoader().getResourceAsStream(properties.getInputRootDir()
                         + "/" + properties.getMissionsFileName())));
@@ -109,24 +92,19 @@ public final class InputReaderUtil {
                     matcher = pattern.matcher(scanner.nextLine());
                     while (matcher.find()) {
                         NasaContext.getInstance().retrieveBaseEntityList(FlightMission.class)
-                                .add(flightMissionFactory
+                                .add(new FlightMissionFactory()
                                         .create(matcher.group(1)
                                                 , LocalDateTime.parse(matcher.group(2), formatter)
                                                 , LocalDateTime.parse(matcher.group(3), formatter)
                                                 , matcher.group(4)));
                     }
                 }
-                refreshJSON(file, FlightMission.class);
             }
         }
+        logger.info("Processed " + properties.getMissionsFileName() + ".txt file");
     }
 
-    private void readPlanetFile() throws InvalidStateException {
-        File file = new File("src/main/resources/" + properties.getOutputRootDir()
-                + "\\" + properties.getPlanetFileName() + ".json");
-
-        EntityFactory<Planet> planetFactory = new PlanetFactory();
-
+    private void readPlanetFile() {
         int y = 0;
         int x = 0;
         scanner = new Scanner(Objects.requireNonNull(
@@ -144,30 +122,18 @@ public final class InputReaderUtil {
                     x = 0;
                 }
                 if (!name.equals("null")) {
-                    NasaContext.getInstance().retrieveBaseEntityList(Planet.class).add(planetFactory.create(x, y, name));
+                    NasaContext.getInstance().retrieveBaseEntityList(Planet.class).add(new PlanetFactory().create(x, y, name));
                 }
             }
         }
-        refreshJSON(file, Planet.class);
-    }
-
-    private void refreshJSON(File file, Class<? extends BaseEntity> tClass) {
-        Collection<? extends BaseEntity> entities = NasaContext.getInstance().retrieveBaseEntityList(tClass);
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            JsonNode node = mapper.valueToTree(entities);
-            mapper.writeValue(file, node);
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-
+        logger.info("Processed " + properties.getPlanetFileName() + ".txt file");
     }
 
 
     public void readInputFile() throws InvalidStateException {
-        readPlanetFile();
         readCrewFile();
-        //readSpaceshipFile();
-        //readMissionsFile();
+        readSpaceshipFile();
+        readMissionsFile();
+        readPlanetFile();
     }
 }

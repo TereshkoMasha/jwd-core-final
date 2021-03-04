@@ -6,6 +6,5 @@ public interface SpacemapService {
 
     Planet getRandomPlanet();
 
-
-    int getDistanceBetweenPlanets(Planet first, Planet second);
+    double getDistanceBetweenPlanets(Planet first, Planet second);
 }
