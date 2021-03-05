@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * Should be a builder for {@link BaseEntity} fields
  */
-public abstract class Criteria<T extends BaseEntity>  {
+public abstract class Criteria<T extends BaseEntity> {
     @Getter
     private final Long id;
     @Getter

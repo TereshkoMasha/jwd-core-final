@@ -11,6 +11,7 @@ import com.epam.jwd.core_final.util.CrewMemberDeserializer;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
+import lombok.Getter;
 import org.apache.log4j.Logger;
 
 import java.io.File;
@@ -20,8 +21,9 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class CrewServiceImpl implements CrewService {
+    @Getter
+    private static final CrewServiceImpl instance = new CrewServiceImpl();
     private final Logger logger = Logger.getLogger(CrewServiceImpl.class);
-    public static final CrewServiceImpl instance = new CrewServiceImpl();
 
     private List<CrewMemberCriteria> infFromFile() throws IOException {
         ObjectMapper mapper = new ObjectMapper();

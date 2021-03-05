@@ -15,7 +15,7 @@ import java.util.Objects;
  * isReadyForNextMissions {@link Boolean} - true by default. Set to false, after first failed mission
  */
 
-@JsonDeserialize(as = CrewMember.class)
+
 public class CrewMember extends AbstractBaseEntity {
     // todo
     @Getter

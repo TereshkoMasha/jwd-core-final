@@ -15,15 +15,12 @@ public class SpaceshipCriteria extends Criteria<Spaceship> {
     private final Map<Role, Short> crew;
     @Getter
     private final Long flightDistance;
-    @Getter
-    private final String name;
 
 
-    public SpaceshipCriteria(Long id, String name, Map<Role, Short> crew, Long flightDistance, String name1) {
+    public SpaceshipCriteria(Long id, String name, Map<Role, Short> crew, Long flightDistance) {
         super(id, name);
         this.crew = crew;
         this.flightDistance = flightDistance;
-        this.name = name1;
     }
 
     public static class SpaceshipCriteriaBuilder extends CriteriaBuilder<Spaceship> {
@@ -32,7 +29,6 @@ public class SpaceshipCriteria extends Criteria<Spaceship> {
         private String name;
         private Map<Role, Short> crew;
         private Long flightDistance;
-        private String name1;
 
         public SpaceshipCriteriaBuilder setId(Long id) {
             this.id = id;
@@ -54,13 +50,8 @@ public class SpaceshipCriteria extends Criteria<Spaceship> {
             return this;
         }
 
-        public SpaceshipCriteriaBuilder setName1(String name1) {
-            this.name1 = name1;
-            return this;
-        }
-
         public SpaceshipCriteria createSpaceshipCriteria() {
-            return new SpaceshipCriteria(id, name, crew, flightDistance, name1);
+            return new SpaceshipCriteria(id, name, crew, flightDistance);
         }
     }
 

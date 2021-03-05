@@ -1,208 +1,195 @@
-2021-03-04 20:47:03 [main] INFO  - Application launched
-2021-03-04 20:47:03 [main] INFO  - Properties loaded
-2021-03-04 20:47:10 [main] INFO  - Processed crew.txt file
-2021-03-04 20:47:10 [main] INFO  - Processed spaceships.txt file
-2021-03-04 20:47:10 [main] INFO  - Processed missions.txt file
-2021-03-04 20:47:13 [main] INFO  - Processed spacemap.txt file
-2021-03-04 20:48:30 [main] ERROR - Application launched
-2021-03-04 20:52:40 [main] ERROR - Application launched
-2021-03-04 20:52:40 [main] INFO  - Properties loaded
-2021-03-04 20:52:40 [main] INFO  - Processed crew.txt file
-2021-03-04 20:52:40 [main] INFO  - Processed spaceships.txt file
-2021-03-04 20:52:40 [main] INFO  - Processed missions.txt file
-2021-03-04 20:52:43 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:01:19 [main] INFO  - Application launched
-2021-03-04 21:01:19 [main] INFO  - Properties loaded
-2021-03-04 21:01:19 [main] INFO  - Processed crew.txt file
-2021-03-04 21:01:19 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:01:19 [main] INFO  - Processed missions.txt file
-2021-03-04 21:01:23 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:04:59 [main] INFO  - Application launched
-2021-03-04 21:04:59 [main] INFO  - Properties loaded
-2021-03-04 21:04:59 [main] INFO  - Processed crew.txt file
-2021-03-04 21:04:59 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:04:59 [main] INFO  - Processed missions.txt file
-2021-03-04 21:05:02 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:09:07 [main] INFO  - Application launched
-2021-03-04 21:09:07 [main] INFO  - Properties loaded
-2021-03-04 21:09:10 [main] INFO  - Processed crew.txt file
-2021-03-04 21:09:56 [main] INFO  - Application launched
-2021-03-04 21:09:57 [main] INFO  - Properties loaded
-2021-03-04 21:16:27 [main] INFO  - Application launched
-2021-03-04 21:16:27 [main] INFO  - Properties loaded
-2021-03-04 21:16:27 [main] INFO  - Processed crew.txt file
-2021-03-04 21:16:27 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:16:27 [main] INFO  - Processed missions.txt file
-2021-03-04 21:16:30 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:17:03 [main] INFO  - Application launched
-2021-03-04 21:17:03 [main] INFO  - Properties loaded
-2021-03-04 21:17:03 [main] INFO  - Processed crew.txt file
-2021-03-04 21:17:03 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:17:03 [main] INFO  - Processed missions.txt file
-2021-03-04 21:17:06 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:17:31 [main] INFO  - Application launched
-2021-03-04 21:17:31 [main] INFO  - Properties loaded
-2021-03-04 21:19:13 [main] INFO  - Processed crew.txt file
-2021-03-04 21:19:13 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:19:13 [main] INFO  - Processed missions.txt file
-2021-03-04 21:19:16 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:20:17 [main] INFO  - Application launched
-2021-03-04 21:20:17 [main] INFO  - Properties loaded
-2021-03-04 21:20:17 [main] INFO  - Processed crew.txt file
-2021-03-04 21:20:17 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:20:17 [main] INFO  - Processed missions.txt file
-2021-03-04 21:20:20 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:22:42 [main] INFO  - Application launched
-2021-03-04 21:22:42 [main] INFO  - Properties loaded
-2021-03-04 21:22:43 [main] INFO  - Processed crew.txt file
-2021-03-04 21:22:43 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:22:43 [main] INFO  - Processed missions.txt file
-2021-03-04 21:22:46 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:24:31 [main] INFO  - Application launched
-2021-03-04 21:24:31 [main] INFO  - Properties loaded
-2021-03-04 21:24:32 [main] INFO  - Processed crew.txt file
-2021-03-04 21:24:32 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:24:32 [main] INFO  - Processed missions.txt file
-2021-03-04 21:24:35 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:34:28 [main] INFO  - Application launched
-2021-03-04 21:34:28 [main] INFO  - Properties loaded
-2021-03-04 21:34:30 [main] INFO  - Processed crew.txt file
-2021-03-04 21:34:30 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:34:30 [main] INFO  - Processed missions.txt file
-2021-03-04 21:34:32 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:37:47 [main] INFO  - Application launched
-2021-03-04 21:37:47 [main] INFO  - Properties loaded
-2021-03-04 21:37:48 [main] INFO  - Processed crew.txt file
-2021-03-04 21:37:48 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:37:48 [main] INFO  - Processed missions.txt file
-2021-03-04 21:37:51 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:43:17 [main] INFO  - Application launched
-2021-03-04 21:43:17 [main] INFO  - Properties loaded
-2021-03-04 21:43:18 [main] INFO  - Processed crew.txt file
-2021-03-04 21:43:18 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:43:19 [main] INFO  - Processed missions.txt file
-2021-03-04 21:43:22 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:44:38 [main] INFO  - Application launched
-2021-03-04 21:44:39 [main] INFO  - Properties loaded
-2021-03-04 21:44:40 [main] INFO  - Processed crew.txt file
-2021-03-04 21:44:40 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:44:40 [main] INFO  - Processed missions.txt file
-2021-03-04 21:44:43 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:48:19 [main] INFO  - Application launched
-2021-03-04 21:48:19 [main] INFO  - Properties loaded
-2021-03-04 21:48:20 [main] INFO  - Processed crew.txt file
-2021-03-04 21:48:20 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:48:20 [main] INFO  - Processed missions.txt file
-2021-03-04 21:48:23 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:51:27 [main] INFO  - Application launched
-2021-03-04 21:51:27 [main] INFO  - Properties loaded
-2021-03-04 21:51:28 [main] INFO  - Processed crew.txt file
-2021-03-04 21:51:28 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:51:28 [main] INFO  - Processed missions.txt file
-2021-03-04 21:51:32 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:55:04 [main] INFO  - Application launched
-2021-03-04 21:55:04 [main] INFO  - Properties loaded
-2021-03-04 21:55:06 [main] INFO  - Processed crew.txt file
-2021-03-04 21:55:06 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:55:06 [main] INFO  - Processed missions.txt file
-2021-03-04 21:55:10 [main] INFO  - Processed spacemap.txt file
-2021-03-04 21:55:58 [main] INFO  - Application launched
-2021-03-04 21:55:59 [main] INFO  - Properties loaded
-2021-03-04 21:58:14 [main] INFO  - Processed crew.txt file
-2021-03-04 21:58:29 [main] INFO  - Processed spaceships.txt file
-2021-03-04 21:58:29 [main] INFO  - Processed missions.txt file
-2021-03-04 21:58:33 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:01:21 [main] INFO  - Application launched
-2021-03-04 22:01:21 [main] INFO  - Properties loaded
-2021-03-04 22:01:21 [main] INFO  - Processed crew.txt file
-2021-03-04 22:01:21 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:01:21 [main] INFO  - Processed missions.txt file
-2021-03-04 22:01:21 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:02:15 [main] INFO  - Application launched
-2021-03-04 22:02:15 [main] INFO  - Properties loaded
-2021-03-04 22:02:15 [main] INFO  - Processed crew.txt file
-2021-03-04 22:02:15 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:02:15 [main] INFO  - Processed missions.txt file
-2021-03-04 22:02:15 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:02:27 [main] INFO  - Application launched
-2021-03-04 22:02:27 [main] INFO  - Properties loaded
-2021-03-04 22:02:27 [main] INFO  - Processed crew.txt file
-2021-03-04 22:02:27 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:02:27 [main] INFO  - Processed missions.txt file
-2021-03-04 22:02:28 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:03:49 [main] INFO  - Application launched
-2021-03-04 22:03:49 [main] INFO  - Properties loaded
-2021-03-04 22:03:49 [main] INFO  - Processed crew.txt file
-2021-03-04 22:03:49 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:03:49 [main] INFO  - Processed missions.txt file
-2021-03-04 22:03:53 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:04:13 [main] ERROR - ?
+2021-03-05 21:40:36 [main] INFO  - Processed spaceships.txt file
+2021-03-05 21:40:36 [main] INFO  - Processed missions.txt file
+2021-03-05 21:40:36 [main] INFO  - Processed spacemap.txt file
+2021-03-05 21:42:15 [main] INFO  - Application launched
+2021-03-05 21:42:15 [main] INFO  - Properties loaded
+2021-03-05 21:42:15 [main] INFO  - Processed crew.txt file
+2021-03-05 21:42:15 [main] INFO  - Processed spaceships.txt file
+2021-03-05 21:42:15 [main] INFO  - Processed missions.txt file
+2021-03-05 21:42:17 [main] INFO  - Processed spacemap.txt file
+2021-03-05 21:44:55 [main] INFO  - Application launched
+2021-03-05 21:44:55 [main] INFO  - Properties loaded
+2021-03-05 21:44:55 [main] INFO  - Processed crew.txt file
+2021-03-05 21:44:55 [main] INFO  - Processed spaceships.txt file
+2021-03-05 21:44:55 [main] INFO  - Processed missions.txt file
+2021-03-05 21:44:58 [main] INFO  - Processed spacemap.txt file
+2021-03-05 21:46:25 [main] INFO  - Application launched
+2021-03-05 21:46:25 [main] INFO  - Properties loaded
+2021-03-05 21:46:25 [main] INFO  - Processed crew.txt file
+2021-03-05 21:46:25 [main] INFO  - Processed spaceships.txt file
+2021-03-05 21:46:25 [main] INFO  - Processed missions.txt file
+2021-03-05 21:46:28 [main] INFO  - Processed spacemap.txt file
+2021-03-05 21:53:57 [main] INFO  - Application launched
+2021-03-05 21:53:57 [main] INFO  - Properties loaded
+2021-03-05 21:53:57 [main] INFO  - Processed crew.txt file
+2021-03-05 21:53:57 [main] INFO  - Processed spaceships.txt file
+2021-03-05 21:53:57 [main] INFO  - Processed missions.txt file
+2021-03-05 21:53:57 [main] INFO  - Processed spacemap.txt file
+2021-03-05 21:55:20 [main] INFO  - Application launched
+2021-03-05 21:55:20 [main] INFO  - Properties loaded
+2021-03-05 21:55:20 [main] INFO  - Processed crew.txt file
+2021-03-05 21:55:20 [main] INFO  - Processed spaceships.txt file
+2021-03-05 21:55:20 [main] INFO  - Processed missions.txt file
+2021-03-05 21:55:23 [main] INFO  - Processed spacemap.txt file
+2021-03-05 21:59:45 [main] INFO  - Application launched
+2021-03-05 21:59:45 [main] INFO  - Properties loaded
+2021-03-05 21:59:45 [main] INFO  - Processed crew.txt file
+2021-03-05 21:59:45 [main] INFO  - Processed spaceships.txt file
+2021-03-05 21:59:45 [main] INFO  - Processed missions.txt file
+2021-03-05 21:59:45 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:02:16 [main] INFO  - Application launched
+2021-03-05 22:02:16 [main] INFO  - Properties loaded
+2021-03-05 22:02:16 [main] INFO  - Processed crew.txt file
+2021-03-05 22:02:16 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:02:16 [main] INFO  - Processed missions.txt file
+2021-03-05 22:02:16 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:03:38 [main] INFO  - Application launched
+2021-03-05 22:03:38 [main] INFO  - Properties loaded
+2021-03-05 22:03:38 [main] INFO  - Processed crew.txt file
+2021-03-05 22:03:38 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:03:38 [main] INFO  - Processed missions.txt file
+2021-03-05 22:03:41 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:04:35 [main] INFO  - Application launched
+2021-03-05 22:04:35 [main] INFO  - Properties loaded
+2021-03-05 22:04:36 [main] INFO  - Processed crew.txt file
+2021-03-05 22:04:36 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:04:36 [main] INFO  - Processed missions.txt file
+2021-03-05 22:04:38 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:06:27 [main] INFO  - Application launched
+2021-03-05 22:06:27 [main] INFO  - Properties loaded
+2021-03-05 22:06:27 [main] INFO  - Processed crew.txt file
+2021-03-05 22:06:27 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:06:27 [main] INFO  - Processed missions.txt file
+2021-03-05 22:06:30 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:08:35 [main] INFO  - Application launched
+2021-03-05 22:08:35 [main] INFO  - Properties loaded
+2021-03-05 22:08:35 [main] INFO  - Processed crew.txt file
+2021-03-05 22:08:35 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:08:35 [main] INFO  - Processed missions.txt file
+2021-03-05 22:08:35 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:13:34 [main] INFO  - Application launched
+2021-03-05 22:13:34 [main] INFO  - Properties loaded
+2021-03-05 22:13:34 [main] INFO  - Processed crew.txt file
+2021-03-05 22:13:34 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:13:34 [main] INFO  - Processed missions.txt file
+2021-03-05 22:13:34 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:32:59 [main] INFO  - Application launched
+2021-03-05 22:32:59 [main] INFO  - Properties loaded
+2021-03-05 22:32:59 [main] INFO  - Processed crew.txt file
+2021-03-05 22:32:59 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:32:59 [main] INFO  - Processed missions.txt file
+2021-03-05 22:32:59 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:35:36 [main] INFO  - Application launched
+2021-03-05 22:35:36 [main] INFO  - Properties loaded
+2021-03-05 22:35:36 [main] INFO  - Processed crew.txt file
+2021-03-05 22:35:36 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:35:36 [main] INFO  - Processed missions.txt file
+2021-03-05 22:35:36 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:37:10 [main] INFO  - Application launched
+2021-03-05 22:37:10 [main] INFO  - Properties loaded
+2021-03-05 22:37:10 [main] INFO  - Processed crew.txt file
+2021-03-05 22:37:10 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:37:10 [main] INFO  - Processed missions.txt file
+2021-03-05 22:37:10 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:39:01 [main] INFO  - Application launched
+2021-03-05 22:39:01 [main] INFO  - Properties loaded
+2021-03-05 22:39:01 [main] INFO  - Processed crew.txt file
+2021-03-05 22:39:01 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:39:01 [main] INFO  - Processed missions.txt file
+2021-03-05 22:39:01 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:41:14 [main] INFO  - Application launched
+2021-03-05 22:41:14 [main] INFO  - Properties loaded
+2021-03-05 22:41:14 [main] INFO  - Processed crew.txt file
+2021-03-05 22:41:14 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:41:14 [main] INFO  - Processed missions.txt file
+2021-03-05 22:41:14 [main] INFO  - Processed spacemap.txt file
+2021-03-05 22:44:05 [main] INFO  - Application launched
+2021-03-05 22:44:05 [main] INFO  - Properties loaded
+2021-03-05 22:44:05 [main] INFO  - Processed crew.txt file
+2021-03-05 22:44:05 [main] INFO  - Processed spaceships.txt file
+2021-03-05 22:44:05 [main] INFO  - Processed missions.txt file
+2021-03-05 22:44:05 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:11:11 [main] INFO  - Application launched
+2021-03-05 23:11:11 [main] INFO  - Properties loaded
+2021-03-05 23:11:11 [main] INFO  - Processed crew.txt file
+2021-03-05 23:11:11 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:11:11 [main] INFO  - Processed missions.txt file
+2021-03-05 23:11:11 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:12:07 [main] ERROR - ?
 com.epam.jwd.core_final.exception.UnknownEntityException: Unknown command input
-	at com.epam.jwd.core_final.context.ApplicationMenu.menu(ApplicationMenu.java:58)
+	at com.epam.jwd.core_final.context.ApplicationMenu.menu(ApplicationMenu.java:70)
 	at com.epam.jwd.core_final.Main.main(Main.java:14)
-2021-03-04 22:05:16 [main] INFO  - Application launched
-2021-03-04 22:05:16 [main] INFO  - Properties loaded
-2021-03-04 22:05:17 [main] INFO  - Processed crew.txt file
-2021-03-04 22:05:17 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:05:17 [main] INFO  - Processed missions.txt file
-2021-03-04 22:05:20 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:08:46 [main] INFO  - Application launched
-2021-03-04 22:08:46 [main] INFO  - Properties loaded
-2021-03-04 22:08:46 [main] INFO  - Processed crew.txt file
-2021-03-04 22:08:46 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:08:46 [main] INFO  - Processed missions.txt file
-2021-03-04 22:08:52 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:08:54 [main] INFO  - Application launched
-2021-03-04 22:08:54 [main] INFO  - Properties loaded
-2021-03-04 22:08:54 [main] INFO  - Processed crew.txt file
-2021-03-04 22:08:54 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:08:54 [main] INFO  - Processed missions.txt file
-2021-03-04 22:08:57 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:11:42 [main] INFO  - Application launched
-2021-03-04 22:11:42 [main] INFO  - Properties loaded
-2021-03-04 22:11:42 [main] INFO  - Processed crew.txt file
-2021-03-04 22:11:42 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:11:42 [main] INFO  - Processed missions.txt file
-2021-03-04 22:11:45 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:16:54 [main] INFO  - Application launched
-2021-03-04 22:16:54 [main] INFO  - Properties loaded
-2021-03-04 22:16:55 [main] INFO  - Processed crew.txt file
-2021-03-04 22:16:55 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:16:55 [main] INFO  - Processed missions.txt file
-2021-03-04 22:16:58 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:17:58 [main] INFO  - Application launched
-2021-03-04 22:17:58 [main] INFO  - Properties loaded
-2021-03-04 22:17:58 [main] INFO  - Processed crew.txt file
-2021-03-04 22:17:58 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:17:58 [main] INFO  - Processed missions.txt file
-2021-03-04 22:18:01 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:32:46 [main] INFO  - Application launched
-2021-03-04 22:32:46 [main] INFO  - Properties loaded
-2021-03-04 22:32:46 [main] INFO  - Processed crew.txt file
-2021-03-04 22:32:46 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:32:46 [main] INFO  - Processed missions.txt file
-2021-03-04 22:32:49 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:34:16 [main] INFO  - Application launched
-2021-03-04 22:34:16 [main] INFO  - Properties loaded
-2021-03-04 22:34:17 [main] INFO  - Processed crew.txt file
-2021-03-04 22:34:17 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:34:17 [main] INFO  - Processed missions.txt file
-2021-03-04 22:34:19 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:42:12 [main] INFO  - Application launched
-2021-03-04 22:42:12 [main] INFO  - Properties loaded
-2021-03-04 22:42:12 [main] INFO  - Processed crew.txt file
-2021-03-04 22:42:12 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:42:12 [main] INFO  - Processed missions.txt file
-2021-03-04 22:42:15 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:43:15 [main] INFO  - Application launched
-2021-03-04 22:43:15 [main] INFO  - Properties loaded
-2021-03-04 22:43:15 [main] INFO  - Processed crew.txt file
-2021-03-04 22:43:15 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:43:15 [main] INFO  - Processed missions.txt file
-2021-03-04 22:43:18 [main] INFO  - Processed spacemap.txt file
-2021-03-04 22:46:19 [main] INFO  - Application launched
-2021-03-04 22:46:19 [main] INFO  - Properties loaded
-2021-03-04 22:46:20 [main] INFO  - Processed crew.txt file
-2021-03-04 22:46:20 [main] INFO  - Processed spaceships.txt file
-2021-03-04 22:46:20 [main] INFO  - Processed missions.txt file
-2021-03-04 22:46:23 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:12:33 [main] INFO  - Application launched
+2021-03-05 23:12:33 [main] INFO  - Properties loaded
+2021-03-05 23:12:33 [main] INFO  - Processed crew.txt file
+2021-03-05 23:12:33 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:12:33 [main] INFO  - Processed missions.txt file
+2021-03-05 23:12:36 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:14:01 [main] INFO  - Application launched
+2021-03-05 23:14:01 [main] INFO  - Properties loaded
+2021-03-05 23:14:01 [main] INFO  - Processed crew.txt file
+2021-03-05 23:14:01 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:14:01 [main] INFO  - Processed missions.txt file
+2021-03-05 23:14:04 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:15:24 [main] INFO  - Application launched
+2021-03-05 23:15:24 [main] INFO  - Properties loaded
+2021-03-05 23:15:24 [main] INFO  - Processed crew.txt file
+2021-03-05 23:15:24 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:15:24 [main] INFO  - Processed missions.txt file
+2021-03-05 23:15:27 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:17:05 [main] INFO  - Application launched
+2021-03-05 23:17:05 [main] INFO  - Properties loaded
+2021-03-05 23:17:06 [main] INFO  - Processed crew.txt file
+2021-03-05 23:17:06 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:17:06 [main] INFO  - Processed missions.txt file
+2021-03-05 23:17:06 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:24:05 [main] INFO  - Application launched
+2021-03-05 23:24:05 [main] INFO  - Properties loaded
+2021-03-05 23:24:05 [main] INFO  - Processed crew.txt file
+2021-03-05 23:24:05 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:24:05 [main] INFO  - Processed missions.txt file
+2021-03-05 23:24:05 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:24:26 [main] ERROR - ?
+com.epam.jwd.core_final.exception.UnknownEntityException: Unknown command input
+	at com.epam.jwd.core_final.context.ApplicationMenu.menu(ApplicationMenu.java:70)
+	at com.epam.jwd.core_final.Main.main(Main.java:14)
+2021-03-05 23:26:33 [main] INFO  - Application launched
+2021-03-05 23:26:33 [main] INFO  - Properties loaded
+2021-03-05 23:26:33 [main] INFO  - Processed crew.txt file
+2021-03-05 23:26:33 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:26:33 [main] INFO  - Processed missions.txt file
+2021-03-05 23:26:33 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:27:10 [main] INFO  - Application launched
+2021-03-05 23:27:10 [main] INFO  - Properties loaded
+2021-03-05 23:27:10 [main] INFO  - Processed crew.txt file
+2021-03-05 23:27:10 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:27:10 [main] INFO  - Processed missions.txt file
+2021-03-05 23:27:10 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:27:32 [main] ERROR - ?
+com.epam.jwd.core_final.exception.UnknownEntityException: Unknown command input
+	at com.epam.jwd.core_final.context.ApplicationMenu.menu(ApplicationMenu.java:71)
+	at com.epam.jwd.core_final.Main.main(Main.java:13)
+2021-03-05 23:31:46 [main] INFO  - Application launched
+2021-03-05 23:31:46 [main] INFO  - Properties loaded
+2021-03-05 23:31:46 [main] INFO  - Processed crew.txt file
+2021-03-05 23:31:46 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:31:46 [main] INFO  - Processed missions.txt file
+2021-03-05 23:31:49 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:37:51 [main] INFO  - Application launched
+2021-03-05 23:37:51 [main] INFO  - Properties loaded
+2021-03-05 23:37:51 [main] INFO  - Processed crew.txt file
+2021-03-05 23:37:51 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:37:51 [main] INFO  - Processed missions.txt file
+2021-03-05 23:37:51 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:39:38 [main] INFO  - Application launched
+2021-03-05 23:39:38 [main] INFO  - Properties loaded
+2021-03-05 23:39:38 [main] INFO  - Processed crew.txt file
+2021-03-05 23:39:38 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:39:38 [main] INFO  - Processed missions.txt file
+2021-03-05 23:39:38 [main] INFO  - Processed spacemap.txt file
+2021-03-05 23:42:53 [main] INFO  - Application launched
+2021-03-05 23:42:53 [main] INFO  - Properties loaded
+2021-03-05 23:42:53 [main] INFO  - Processed crew.txt file
+2021-03-05 23:42:53 [main] INFO  - Processed spaceships.txt file
+2021-03-05 23:42:53 [main] INFO  - Processed missions.txt file
+2021-03-05 23:42:53 [main] INFO  - Processed spacemap.txt file

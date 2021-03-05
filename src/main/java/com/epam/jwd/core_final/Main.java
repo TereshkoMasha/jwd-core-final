@@ -10,7 +10,6 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
         ApplicationMenu menu = Application.start();
-        System.out.println(menu.printAvailableOptions());
         menu.menu();
 
     }

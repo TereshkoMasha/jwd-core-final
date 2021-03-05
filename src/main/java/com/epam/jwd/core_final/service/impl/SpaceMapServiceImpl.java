@@ -3,11 +3,15 @@ package com.epam.jwd.core_final.service.impl;
 import com.epam.jwd.core_final.context.impl.NasaContext;
 import com.epam.jwd.core_final.domain.Planet;
 import com.epam.jwd.core_final.service.SpacemapService;
+import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class SpaceMapServiceImpl implements SpacemapService {
+    @Getter
+    private static final SpaceMapServiceImpl instance = new SpaceMapServiceImpl();
+
     @Override
     public Planet getRandomPlanet() {
         Random rand = new Random();

@@ -8,24 +8,28 @@ import com.epam.jwd.core_final.domain.Role;
 import com.epam.jwd.core_final.domain.factory.impl.CrewMemberFactory;
 import com.epam.jwd.core_final.service.impl.CrewServiceImpl;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class CreateCrewCommand implements Command {
     Scanner scanner = new Scanner(System.in);
-    CrewServiceImpl service;
+
 
     @Override
-    public void execute() throws IOException {
+    public void execute() {
+        try {
+            System.out.print("\nEnter crew name: ");
+            String name = scanner.next();
+            System.out.print("Enter crew rank");
+            Rank rank = Rank.resolveRankById(Integer.parseInt(scanner.next()));
+            System.out.print("Enter crew role");
+            Role role = Role.resolveRoleById(scanner.nextInt());
+            CrewMember crewMember = CrewServiceImpl.getInstance().createCrewMember(new CrewMemberFactory().create(role, name, rank));
 
-        System.out.println("Enter crew name: ");
-        String name = scanner.next();
-        System.out.println("Enter crew rank");
-        Rank rank = Rank.resolveRankById(Integer.parseInt(scanner.next()));
-        System.out.println("Enter crew role");
-        Role role = Role.resolveRoleById(scanner.nextInt());
-        CrewMember crewMember = service.createCrewMember(new CrewMemberFactory().create(role, name, rank));
+            NasaContext.getInstance().retrieveBaseEntityList(CrewMember.class).add(crewMember);
+            System.out.println("Success: crew " + name + " added\n");
 
-        NasaContext.getInstance().retrieveBaseEntityList(CrewMember.class).add(crewMember);
+        } catch (Exception e) {
+            System.out.println("Invalid input, try again");
+        }
     }
 }

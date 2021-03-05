@@ -43,7 +43,6 @@ public final class InputReaderUtil {
                     NasaContext.getInstance().retrieveBaseEntityList(CrewMember.class)
                             .add(new CrewMemberFactory().create(Role.resolveRoleById(Integer.parseInt(matcher.group(1))),
                                     matcher.group(2), Rank.resolveRankById(Integer.parseInt(matcher.group(3)))));
-                    ;
                 }
             } else {
 

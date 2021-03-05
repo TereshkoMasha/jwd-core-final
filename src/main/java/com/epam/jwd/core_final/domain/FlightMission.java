@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,7 +33,7 @@ public class FlightMission extends AbstractBaseEntity {
     private Spaceship assignedSpaceShift;
     @Getter
     @Setter
-    private List<CrewMember> assignedCrew;
+    private List<CrewMember> assignedCrew = new ArrayList<>();
     @Getter
     @Setter
     private MissionResult missionResult;

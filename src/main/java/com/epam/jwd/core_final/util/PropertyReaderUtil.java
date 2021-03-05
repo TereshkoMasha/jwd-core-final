@@ -1,7 +1,6 @@
 package com.epam.jwd.core_final.util;
 
 import com.epam.jwd.core_final.Main;
-import com.epam.jwd.core_final.context.Application;
 import com.epam.jwd.core_final.domain.ApplicationProperties;
 import org.apache.log4j.Logger;
 

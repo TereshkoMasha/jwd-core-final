@@ -1,15 +1,11 @@
 package com.epam.jwd.core_final.context;
 
-import com.epam.jwd.core_final.comand.impl.CreateCrewCommand;
-import com.epam.jwd.core_final.criteria.CrewMemberCriteria;
-import com.epam.jwd.core_final.criteria.Criteria;
-import com.epam.jwd.core_final.domain.CrewMember;
-import com.epam.jwd.core_final.domain.Rank;
+import com.epam.jwd.core_final.comand.impl.*;
+import com.epam.jwd.core_final.exception.InvalidStateException;
 import com.epam.jwd.core_final.exception.UnknownEntityException;
-import com.epam.jwd.core_final.service.CrewService;
-import com.epam.jwd.core_final.service.impl.CrewServiceImpl;
 import org.apache.log4j.Logger;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 // todo replace Object with your own types
@@ -22,30 +18,59 @@ public interface ApplicationMenu {
     ApplicationContext getApplicationContext();
 
     default String printAvailableOptions() {
-        return "1.Print all crew members -PC\n" +
-                "2.Print all spaceships -PS\n" +
-                "3.Print all missions -PM\n" +
-                "4.Add crew member -AC\n";
+        return "1.Add crew member -AC\n" +
+                "2.Add flight mission -AM\n" +
+                "3.Add spaceship -AS\n" +
+                "4.Assign spaceship on mission -MS\n" +
+                "5.Assign crew on mission -MC\n" +
+                "6.Set planets on mission -SP\n" +
+                "7.Update mission information -UM\n" +
+                "10. Exit -E";
+
     }
 
-    default void menu() {
+    default void menu() throws InvalidStateException, IOException {
         Scanner scanner = new Scanner(System.in);
-        CrewService service = new CrewServiceImpl();
-        while (true) {
+        boolean flag = true;
+        while (flag) {
+            System.out.println(printAvailableOptions());
+            System.out.print("Enter the command: ");
             switch (scanner.next()) {
-                case "-FC": {  //find crew
-                    Criteria<CrewMember> criteria = new CrewMemberCriteria
-                            .CrewMemberCriteriaBuilder().setRank(Rank.resolveRankById(scanner.nextInt())).build();
-                    service.findCrewMemberByCriteria(criteria);
+                case "-AC": {
+                    new CreateCrewCommand().execute();
                     break;
                 }
-                case "-AC": {
-                    new CreateCrewCommand();
+                case "-AM": {
+                    new CreateFlightMission();
                     break;
+                }
+                case "-AS": {
+                    new CreateSpaceship().execute();
+                    break;
+                }
+                case "-MS": {
+                    new AssignSpaceshipOnMission().execute();
+                    break;
+                }
+                case "-MC": {
+                    new AssignCrewOnMission().execute();
+                    break;
+                }
+                case "-SP": {
+                    new SetPlanetsOnMission().execute();
+                    break;
+                }
+                case "-UM": {
+                    new UpdateMissionInformation().execute();
+                    break;
+                }
+                case "-E": {
+                    flag = false;
                 }
                 default: {
-                    logger.error("?", new UnknownEntityException("Unknown command input"));
+                    logger.error(new UnknownEntityException("Unknown command input"));
                 }
+
             }
         }
     }

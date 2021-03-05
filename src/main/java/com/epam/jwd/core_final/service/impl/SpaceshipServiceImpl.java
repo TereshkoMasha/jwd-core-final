@@ -4,14 +4,18 @@ import com.epam.jwd.core_final.context.impl.NasaContext;
 import com.epam.jwd.core_final.criteria.Criteria;
 import com.epam.jwd.core_final.criteria.SpaceshipCriteria;
 import com.epam.jwd.core_final.domain.Spaceship;
-import com.epam.jwd.core_final.domain.factory.impl.SpaceshipFactory;
+import com.epam.jwd.core_final.exception.UnknownEntityException;
 import com.epam.jwd.core_final.service.SpaceshipService;
+import lombok.Getter;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class SpaceshipServiceImpl implements SpaceshipService {
+    @Getter
+    private static final SpaceshipServiceImpl instance = new SpaceshipServiceImpl();
+
     @Override
     public List<Spaceship> findAllSpaceships() {
         return (List<Spaceship>) NasaContext.getInstance().retrieveBaseEntityList(Spaceship.class);
@@ -37,12 +41,6 @@ public class SpaceshipServiceImpl implements SpaceshipService {
                 .filter(spaceship -> {
                     if (((SpaceshipCriteria) criteria).getFlightDistance() != null) {
                         return spaceship.getFlightDistance().equals(((SpaceshipCriteria) criteria).getFlightDistance());
-                    }
-                    return true;
-                })
-                .filter(spaceship -> {
-                    if (((SpaceshipCriteria) criteria).getCrew() != null) {
-                        return spaceship.getCrew().equals(((SpaceshipCriteria) criteria).getCrew());
                     }
                     return true;
                 })
@@ -72,12 +70,6 @@ public class SpaceshipServiceImpl implements SpaceshipService {
                     }
                     return true;
                 })
-                .filter(spaceship -> {
-                    if (((SpaceshipCriteria) criteria).getCrew() != null) {
-                        return spaceship.getCrew().equals(((SpaceshipCriteria) criteria).getCrew());
-                    }
-                    return true;
-                })
                 .findAny();
     }
 
@@ -91,7 +83,13 @@ public class SpaceshipServiceImpl implements SpaceshipService {
     }
 
     @Override
-    public Spaceship createSpaceship(Spaceship spaceship) throws RuntimeException { //////////////////
-        return new SpaceshipFactory().create(spaceship);
+    public Spaceship createSpaceship(Spaceship spaceship) throws RuntimeException {
+        if (NasaContext.getInstance().retrieveBaseEntityList(Spaceship.class)
+                .stream()
+                .noneMatch(spaceship1 -> spaceship.getName().equals(spaceship1.getName()))) {
+            return spaceship;
+        }
+        throw new UnknownEntityException("Spaceship with the same name already exists");
+
     }
 }

@@ -12,10 +12,7 @@ public interface Application {
 
     static ApplicationMenu start() throws InvalidStateException {
 
-        final Supplier<ApplicationContext> applicationContextSupplier = () -> {
-            ApplicationMenu applicationMenu = new NasaMenu();
-            return (ApplicationContext) applicationMenu;
-        };
+        final Supplier<ApplicationContext> applicationContextSupplier = () -> (ApplicationContext) new NasaMenu();
 
         final NasaContext nasaContext = new NasaContext();
         nasaContext.init();

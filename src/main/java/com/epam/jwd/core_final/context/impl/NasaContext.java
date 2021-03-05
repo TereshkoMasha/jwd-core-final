@@ -65,7 +65,7 @@ public class NasaContext implements ApplicationContext {
 
         TimerTask task = new JSONWriterUtil(properties);
         Timer timer = new Timer(true);
-        timer.scheduleAtFixedRate(task, 0, 10 * 200);
+        timer.scheduleAtFixedRate(task, 0, 10 * 1000);
 
     }
 }

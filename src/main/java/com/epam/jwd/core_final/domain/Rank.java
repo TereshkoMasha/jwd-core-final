@@ -1,17 +1,17 @@
 package com.epam.jwd.core_final.domain;
 
 import com.epam.jwd.core_final.exception.UnknownEntityException;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Getter;
 
-@JsonDeserialize(as = Rank.class)
+
 public enum Rank implements BaseEntity {
     TRAINEE(1L),
     SECOND_OFFICER(2L),
     FIRST_OFFICER(3L),
     CAPTAIN(4L);
 
-    @Getter private final Long id;
+    @Getter
+    private final Long id;
 
     Rank(Long id) {
         this.id = id;
@@ -39,7 +39,7 @@ public enum Rank implements BaseEntity {
      */
     public static Rank resolveRankById(int id) throws UnknownEntityException {
         Rank[] values = values();
-        switch (id){
+        switch (id) {
             case 1: {
                 return values[0];
             }
@@ -52,7 +52,7 @@ public enum Rank implements BaseEntity {
             case 4: {
                 return values[3];
             }
-            default:{
+            default: {
                 throw new UnknownEntityException("Such id doesn't exist!");
             }
         }
