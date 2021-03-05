@@ -1,12 +1,17 @@
 package com.epam.jwd.core_final.util;
 
 import com.epam.jwd.core_final.context.impl.NasaContext;
+import com.epam.jwd.core_final.criteria.CrewMemberCriteria;
 import com.epam.jwd.core_final.domain.*;
+import com.epam.jwd.core_final.service.impl.CrewServiceImpl;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.module.SimpleModule;
 import lombok.SneakyThrows;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import java.util.TimerTask;
 
 public final class JSONWriterUtil extends TimerTask {
@@ -15,6 +20,7 @@ public final class JSONWriterUtil extends TimerTask {
     private File crew;
     private File missions;
     private File spaceships;
+
 
     public JSONWriterUtil(ApplicationProperties applicationProperties) {
         refresh(applicationProperties);

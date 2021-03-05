@@ -37,27 +37,19 @@ public class FlightMission extends AbstractBaseEntity {
     @Setter
     private MissionResult missionResult;
     @Getter
+    @Setter
     private Planet departurePoint;
     @Getter
+    @Setter
     private Planet arrivalPoint;
 
     public FlightMission(String name, LocalDateTime startDate, LocalDateTime endDate
-            , Long distance,MissionResult missionResult) {
+            , Long distance, MissionResult missionResult) {
         super(name);
         this.startDate = startDate;
         this.endDate = endDate;
         this.distance = distance;
         this.missionResult = missionResult;
-    }
-
-    public FlightMission(String name, LocalDateTime startDate, LocalDateTime endDate, Long distance, MissionResult missionResult, Planet departurePoint, Planet arrivalPoint) {
-        super(name);
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.distance = distance;
-        this.missionResult = missionResult;
-        this.departurePoint = departurePoint;
-        this.arrivalPoint = arrivalPoint;
     }
 
     @Override

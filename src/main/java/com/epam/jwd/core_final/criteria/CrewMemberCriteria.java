@@ -1,8 +1,10 @@
 package com.epam.jwd.core_final.criteria;
 
+import com.epam.jwd.core_final.context.impl.NasaContext;
 import com.epam.jwd.core_final.domain.CrewMember;
 import com.epam.jwd.core_final.domain.Rank;
 import com.epam.jwd.core_final.domain.Role;
+import com.epam.jwd.core_final.domain.factory.impl.CrewMemberFactory;
 import lombok.Getter;
 
 /**
@@ -50,7 +52,18 @@ public class CrewMemberCriteria extends Criteria<CrewMember> {
 
     }
 
-
+    void crewCheck(CrewMemberCriteria criteria){
+        if(NasaContext.getInstance().retrieveBaseEntityList(CrewMember.class)
+                .stream()
+                .noneMatch(crewMember -> crewMember.getId().equals(criteria.getId())
+                        && crewMember.getName().equals(criteria.getName())
+                        && crewMember.getRole() == criteria.getRole()
+                        && crewMember.getRank() == criteria.getRank()
+                        && getIsReadyForNextMissions())){
+            NasaContext.getInstance().retrieveBaseEntityList(CrewMember.class).add(new CrewMemberFactory().create(criteria.getRole(),
+                    criteria.getRank(),criteria.getName()));
+        }
+    }
     @Override
     void criteria(Object... objects) {
 

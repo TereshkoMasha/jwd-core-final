@@ -17,10 +17,10 @@ public class SpaceMapServiceImpl implements SpacemapService {
 
     @Override
     public double getDistanceBetweenPlanets(Planet first, Planet second) {
-        return Math.sqrt((second.getPoint().getX() - first.getPoint().getY() )
-                * (second.getPoint().getX() - first.getPoint().getY() )
+        return Math.sqrt((second.getPoint().getX() - first.getPoint().getY())
+                * (second.getPoint().getX() - first.getPoint().getY())
                 + (second.getPoint().getY() - first.getPoint().getY())
-                *(second.getPoint().getY() - first.getPoint().getY()));
+                * (second.getPoint().getY() - first.getPoint().getY()));
 
     }
 }

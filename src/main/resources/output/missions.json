@@ -1,1 +1,170 @@
-[{"id":128,"name":"Marriott","startDate":{"year":2020,"month":"APRIL","nano":0,"monthValue":4,"dayOfMonth":19,"hour":19,"minute":0,"second":0,"dayOfYear":110,"dayOfWeek":"SUNDAY","chronology":{"id":"ISO","calendarType":"iso8601"}},"endDate":{"year":2020,"month":"JULY","nano":0,"monthValue":7,"dayOfMonth":19,"hour":19,"minute":0,"second":0,"dayOfYear":201,"dayOfWeek":"SUNDAY","chronology":{"id":"ISO","calendarType":"iso8601"}},"distance":150000,"assignedSpaceShift":null,"assignedCrew":null,"missionResult":"PLANNED","departurePoint":null,"arrivalPoint":null},{"id":129,"name":"Space","startDate":{"year":2021,"month":"MAY","nano":0,"monthValue":5,"dayOfMonth":21,"hour":14,"minute":0,"second":0,"dayOfYear":141,"dayOfWeek":"FRIDAY","chronology":{"id":"ISO","calendarType":"iso8601"}},"endDate":{"year":2021,"month":"NOVEMBER","nano":0,"monthValue":11,"dayOfMonth":19,"hour":12,"minute":0,"second":0,"dayOfYear":323,"dayOfWeek":"FRIDAY","chronology":{"id":"ISO","calendarType":"iso8601"}},"distance":250000,"assignedSpaceShift":null,"assignedCrew":null,"missionResult":"PLANNED","departurePoint":null,"arrivalPoint":null},{"id":130,"name":"SpaceNight","startDate":{"year":2022,"month":"MAY","nano":0,"monthValue":5,"dayOfMonth":21,"hour":14,"minute":0,"second":0,"dayOfYear":141,"dayOfWeek":"SATURDAY","chronology":{"id":"ISO","calendarType":"iso8601"}},"endDate":{"year":2021,"month":"NOVEMBER","nano":0,"monthValue":11,"dayOfMonth":19,"hour":12,"minute":0,"second":0,"dayOfYear":323,"dayOfWeek":"FRIDAY","chronology":{"id":"ISO","calendarType":"iso8601"}},"distance":350000,"assignedSpaceShift":null,"assignedCrew":null,"missionResult":"PLANNED","departurePoint":null,"arrivalPoint":null},{"id":131,"name":"Nightfall","startDate":{"year":2020,"month":"MARCH","nano":0,"monthValue":3,"dayOfMonth":4,"hour":14,"minute":0,"second":0,"dayOfYear":64,"dayOfWeek":"WEDNESDAY","chronology":{"id":"ISO","calendarType":"iso8601"}},"endDate":{"year":2021,"month":"JANUARY","nano":0,"monthValue":1,"dayOfMonth":1,"hour":9,"minute":0,"second":0,"dayOfYear":1,"dayOfWeek":"FRIDAY","chronology":{"id":"ISO","calendarType":"iso8601"}},"distance":750505,"assignedSpaceShift":null,"assignedCrew":null,"missionResult":"PLANNED","departurePoint":null,"arrivalPoint":null}]
+[
+  {
+    "id": 128,
+    "name": "Marriott",
+    "startDate": {
+      "year": 2020,
+      "month": "APRIL",
+      "nano": 0,
+      "monthValue": 4,
+      "dayOfMonth": 19,
+      "hour": 19,
+      "minute": 0,
+      "second": 0,
+      "dayOfYear": 110,
+      "dayOfWeek": "SUNDAY",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    },
+    "endDate": {
+      "year": 2020,
+      "month": "JULY",
+      "nano": 0,
+      "monthValue": 7,
+      "dayOfMonth": 19,
+      "hour": 19,
+      "minute": 0,
+      "second": 0,
+      "dayOfYear": 201,
+      "dayOfWeek": "SUNDAY",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    },
+    "distance": 150000,
+    "assignedSpaceShift": null,
+    "assignedCrew": null,
+    "missionResult": "PLANNED",
+    "departurePoint": null,
+    "arrivalPoint": null
+  },
+  {
+    "id": 129,
+    "name": "Space",
+    "startDate": {
+      "year": 2021,
+      "month": "MAY",
+      "nano": 0,
+      "monthValue": 5,
+      "dayOfMonth": 21,
+      "hour": 14,
+      "minute": 0,
+      "second": 0,
+      "dayOfYear": 141,
+      "dayOfWeek": "FRIDAY",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    },
+    "endDate": {
+      "year": 2021,
+      "month": "NOVEMBER",
+      "nano": 0,
+      "monthValue": 11,
+      "dayOfMonth": 19,
+      "hour": 12,
+      "minute": 0,
+      "second": 0,
+      "dayOfYear": 323,
+      "dayOfWeek": "FRIDAY",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    },
+    "distance": 250000,
+    "assignedSpaceShift": null,
+    "assignedCrew": null,
+    "missionResult": "PLANNED",
+    "departurePoint": null,
+    "arrivalPoint": null
+  },
+  {
+    "id": 130,
+    "name": "SpaceNight",
+    "startDate": {
+      "year": 2022,
+      "month": "MAY",
+      "nano": 0,
+      "monthValue": 5,
+      "dayOfMonth": 21,
+      "hour": 14,
+      "minute": 0,
+      "second": 0,
+      "dayOfYear": 141,
+      "dayOfWeek": "SATURDAY",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    },
+    "endDate": {
+      "year": 2021,
+      "month": "NOVEMBER",
+      "nano": 0,
+      "monthValue": 11,
+      "dayOfMonth": 19,
+      "hour": 12,
+      "minute": 0,
+      "second": 0,
+      "dayOfYear": 323,
+      "dayOfWeek": "FRIDAY",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    },
+    "distance": 350000,
+    "assignedSpaceShift": null,
+    "assignedCrew": null,
+    "missionResult": "PLANNED",
+    "departurePoint": null,
+    "arrivalPoint": null
+  },
+  {
+    "id": 131,
+    "name": "Nightfall",
+    "startDate": {
+      "year": 2020,
+      "month": "MARCH",
+      "nano": 0,
+      "monthValue": 3,
+      "dayOfMonth": 4,
+      "hour": 14,
+      "minute": 0,
+      "second": 0,
+      "dayOfYear": 64,
+      "dayOfWeek": "WEDNESDAY",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    },
+    "endDate": {
+      "year": 2021,
+      "month": "JANUARY",
+      "nano": 0,
+      "monthValue": 1,
+      "dayOfMonth": 1,
+      "hour": 9,
+      "minute": 0,
+      "second": 0,
+      "dayOfYear": 1,
+      "dayOfWeek": "FRIDAY",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    },
+    "distance": 750505,
+    "assignedSpaceShift": null,
+    "assignedCrew": null,
+    "missionResult": "PLANNED",
+    "departurePoint": null,
+    "arrivalPoint": null
+  }
+]
